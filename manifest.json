@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Микшер звука вкладок",
+  "short_name": "Микшер звука",
+  "version": "2.2.0",
+  "description": "Управление громкостью и отключение звука каждой вкладки в боковой панели Opera GX.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Микшер звука",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Микшер звука",
+    "default_panel": "sidebar.html"
+  }
+}
